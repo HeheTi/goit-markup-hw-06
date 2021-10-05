@@ -439,7 +439,8 @@
             <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
           </address>
         </div>
-        <div class="footer-com-on">
+
+        <div class="footer-come-on">
           <b class="footer-text">присоединяйтесь</b>
           <ul class="footer-social-list">
             <li class="footer-social-item list">
@@ -475,15 +476,117 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-form">
+          <b class="footer-text">Подпишитесь на рассылку</b>
+          <div class="footer-row">
+            <form action="#" class="form-mail">
+              <input
+                type="email"
+                name="distribution"
+                class="footer-form-input"
+                placeholder="Email"
+                required
+              />
+            </form>
+            <div class="footer-btn-icon">
+              <button type="submit" class="footer-btn">Подписаться</button>
+              <svg class="send-distribution-icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
-          <svg class="close-icon">
+          <svg class="close-icon" width="24" height="24">
             <use href="./images/sprite.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#">
+          <div class="form-fied">
+            <label for="" class="form-fied-text">Имя</label>
+            <span class="form-fied-icon"
+              ><input
+                type="text"
+                name="user-name"
+                class="form-input"
+                required
+                placeholder=""
+                id=""
+              />
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-name"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-fied">
+            <label for="user-tel" class="form-fied-text">Телефон</label>
+            <span class="form-fied-icon">
+              <input
+                type="tel"
+                name="user-tel"
+                class="form-input"
+                required
+                placeholder=""
+                id="user-tel"
+              />
+              <svg class="form-icon" width="15" height="12">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-fied"></div>
+          <div class="form-fied">
+            <label for="user-mail" class="form-fied-text">Почта</label>
+            <span class="form-fied-icon">
+              <input
+                type="email"
+                name="user-mail"
+                class="form-input"
+                required
+                placeholder=""
+                id="user-mail"
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-fied">
+            <label for="comment" class="form-fied-text">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="form-text"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <input
+            type="checkbox"
+            class="form-checkbox vusually-hidden"
+            name="policy"
+            id="policy"
+          />
+          <label for="policy" class="check-text">
+            <span class="check-item">
+              <svg class="check-icon" width="11" height="8">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договоpa</a></span
+            >
+          </label>
+          <button type="submit" class="btn-form-send">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
