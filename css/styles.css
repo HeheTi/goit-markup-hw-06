@@ -945,6 +945,7 @@ p {
   text-decoration: underline;
 }
 .check-item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-black-color);
@@ -963,6 +964,7 @@ p {
 }
 
 .btn-form-send {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
